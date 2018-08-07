@@ -2,22 +2,23 @@ FROM ubuntu:16.04
 
 MAINTAINER Jason Campos <jsncam07@gmail.com>
 
+#========================
+# Miscellaneous packages
+#========================
+# openjdk-8-jdk - Install jdk to run the java code.
+# maven - Used in the framework to run the code.
+# build-essential - it is a reference for all the packages needed to compile a debian package
+# unzip - uncompress zip files
+# wget - The non-interactive network downloader
 RUN apt-get update
 RUN apt-get install -y \
 openjdk-8-jdk \
 maven \
 build-essential \
-chrpath \
 libssl-dev \
 libxft-dev \
-libfreetype6-dev \
 libfreetype6 \
-libfontconfig1-dev \
-libfontconfig1 \
 wget \
-libgconf-2-4 \
-libhyphen-dev \
-libxslt-dev \
 python-pip \
 zip \
 unzip \
@@ -26,7 +27,9 @@ screen \
 less \
 vim
 
-
+## Timezone conf
+RUN ln -fs /usr/share/zoneinfo/America/Chicago /etc/localtime
+RUN dpkg-reconfigure --frontend noninteractive tzdata
 
 ## Chrome
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
@@ -42,11 +45,11 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
 RUN cd /root && wget -N http://selenium-release.storage.googleapis.com/3.9/selenium-server-standalone-3.9.0.jar
 RUN mv -f ~/selenium-server-standalone-3.9.0.jar /usr/local/bin/selenium-server-standalone-3.9.0.jar
 RUN chmod 0755 /usr/local/bin/selenium-server-standalone-3.9.0.jar
-##RUN wget -N http://chromedriver.storage.googleapis.com/2.40/chromedriver_linux64.zip -P ~/
-##RUN unzip ~/chromedriver_linux64.zip -d ~/
-##RUN rm ~/chromedriver_linux64.zip
-##RUN mv -f ~/chromedriver /usr/local/bin/chromedriver
-##RUN chmod 0755 /usr/local/bin/chromedriver
+RUN wget -N http://chromedriver.storage.googleapis.com/2.40/chromedriver_linux64.zip -P ~/
+RUN unzip ~/chromedriver_linux64.zip -d ~/
+RUN rm ~/chromedriver_linux64.zip
+RUN mv -f ~/chromedriver /usr/local/bin/chromedriver
+RUN chmod 0755 /usr/local/bin/chromedriver
 
 #=========
 # Firefox
@@ -68,33 +71,27 @@ RUN FIREFOX_DOWNLOAD_URL=$(if [ $FIREFOX_VERSION = "latest" ] || [ $FIREFOX_VERS
 #============
 # GeckoDriver
 #============
-##ARG GECKODRIVER_VERSION=latest
-##RUN GK_VERSION=$(if [ ${GECKODRIVER_VERSION:-latest} = "latest" ]; then echo $(wget -qO- "https://api.github.com/repos/mozilla/geckodriver/releases/latest" | grep '"tag_name":' | sed -E 's/.*"v([0-9.]+)".*/\1/'); else echo $GECKODRIVER_VERSION; fi) \
-  ##&& echo "Using GeckoDriver version: "$GK_VERSION \
-  ##&& wget --no-verbose -O /tmp/geckodriver.tar.gz https://github.com/mozilla/geckodriver/releases/download/v$GK_VERSION/geckodriver-v$GK_VERSION-linux64.tar.gz \
-  ##&& rm -rf /opt/geckodriver \
-  ##&& tar -C /opt -zxf /tmp/geckodriver.tar.gz \
-  ##&& rm /tmp/geckodriver.tar.gz \
-  ##&& mv /opt/geckodriver /opt/geckodriver-$GK_VERSION \
-  ##&& chmod 755 /opt/geckodriver-$GK_VERSION \
-  ##&& ln -fs /opt/geckodriver-$GK_VERSION /usr/local/bin/geckodriver
-
-#We need to give permissions to /root because gecko driver needs to write over it a log file as well as the dconf folder needs to be created since there is where the profile is created
-RUN mkdir root/.cache/dconf
-RUN chmod 777 -R root/
+ARG GECKODRIVER_VERSION=latest
+RUN GK_VERSION=$(if [ ${GECKODRIVER_VERSION:-latest} = "latest" ]; then echo $(wget -qO- "https://api.github.com/repos/mozilla/geckodriver/releases/latest" | grep '"tag_name":' | sed -E 's/.*"v([0-9.]+)".*/\1/'); else echo $GECKODRIVER_VERSION; fi) \
+  && echo "Using GeckoDriver version: "$GK_VERSION \
+  && wget --no-verbose -O /tmp/geckodriver.tar.gz https://github.com/mozilla/geckodriver/releases/download/v$GK_VERSION/geckodriver-v$GK_VERSION-linux64.tar.gz \
+  && rm -rf /opt/geckodriver \
+  && tar -C /opt -zxf /tmp/geckodriver.tar.gz \
+  && rm /tmp/geckodriver.tar.gz \
+  && mv /opt/geckodriver /opt/geckodriver-$GK_VERSION \
+  && chmod 755 /opt/geckodriver-$GK_VERSION \
+  && ln -fs /opt/geckodriver-$GK_VERSION /usr/local/bin/geckodriver
 
 # Folder to copy the selenum grid .json conf files.
 RUN mkdir /usr/local/bin/grid
 
-COPY ./automation/src/com/bluemoon/resources/grid/StartServers.sh /usr/local/bin/runSmokeTesting
+COPY ./automation/src/com/automation/resources/grid/StartServers.sh /usr/local/bin/runTests
 #Copy the selenium grid conf files for node and hub
-COPY ./automation/src/com/bluemoon/resources/grid/StartGrid.sh /usr/local/bin/grid/runGrid
-COPY ./automation/src/com/bluemoon/resources/grid/GridHub.json /usr/local/bin/grid/GridHub.json
-COPY ./automation/src/com/bluemoon/resources/grid/GridNode.json /usr/local/bin/grid/GridNode.json
+COPY ./automation/src/com/automation/resources/grid/StartGrid.sh /usr/local/bin/grid/runGrid
+COPY ./automation/src/com/automation/resources/grid/GridHub.json /usr/local/bin/grid/GridHub.json
+COPY ./automation/src/com/automation/resources/grid/GridNode.json /usr/local/bin/grid/GridNode.json
 
 COPY ./automation /opt/automation
-COPY ./deploy/secrets-entrypoint.sh /usr/local/bin/
 WORKDIR /opt/automation
 RUN mvn install -DskipTests
 
-ENTRYPOINT ["secrets-entrypoint.sh"]

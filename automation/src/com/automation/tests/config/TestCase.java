@@ -1,9 +1,14 @@
 package com.automation.tests.config;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
+import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 
@@ -31,6 +36,22 @@ public class TestCase extends TestCaseBase {
      */
     @AfterMethod(alwaysRun = true)
     public void quitBrowser(ITestResult testResult, Method method) {
+        if (!testResult.isSuccess()) {
+            try {
+                File file = new File("screenshots");
+                if (!file.exists()) {
+                    System.out.println("File created " + file);
+                    file.mkdir();
+                }
+                File scrFile = ((TakesScreenshot) getDriverInstance()).getScreenshotAs(OutputType.FILE);
+                StringBuilder testFailed = new StringBuilder();
+                testFailed.append(this.getClass().getSimpleName()).append(".").append(testResult.getName()).
+                        append(".failedTest").append(".png");
+                FileUtils.copyFile(scrFile, new File("screenshots/" + testFailed.toString()));
+            }catch (IOException ex) {
+                throw new RuntimeException("Error taking the screenshot");
+            }
+        }
         super.quitBrowser();
     }
 

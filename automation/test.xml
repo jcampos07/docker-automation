@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Automation Smoke test" parallel="tests" thread-count="3">
+<suite name="Automation Smoke test" parallel="tests" thread-count="2">
 
     <test name="automation 1">
         <parameter name="browserName" value="chrome"/>
@@ -11,6 +11,7 @@
         <!--<parameter name="executionMode" value="${executionMode}"/> &lt;!&ndash; grid or local &ndash;&gt;-->
         <parameter name="hubUrl" value="http://localhost:4444/wd/hub"/>
         <parameter name="information" value="selenium"/>
+        <parameter name="testNG" value="testNG"/>
 
         <groups>
             <run>

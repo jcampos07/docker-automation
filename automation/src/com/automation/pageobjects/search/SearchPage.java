@@ -37,6 +37,7 @@ public class SearchPage extends PageObjectBase {
      * Click on google search button
      */
     private void clickOnGoogleSearchButton() {
+        actionBot.wait(1000);
         actionBot.click(WebElements.GOOGLE_ICON);
         actionBot.wait(2000);
         actionBot.click(WebElements.GOOGLE_SEARCH_BUTTON);
