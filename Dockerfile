@@ -41,10 +41,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
 	&& sed -i 's/"$HERE\/chrome"/"$HERE\/chrome" --no-sandbox/g' /opt/google/chrome/google-chrome
 
 
-## Selenium and chrome driver
-RUN cd /root && wget -N http://selenium-release.storage.googleapis.com/3.9/selenium-server-standalone-3.9.0.jar
-RUN mv -f ~/selenium-server-standalone-3.9.0.jar /usr/local/bin/selenium-server-standalone-3.9.0.jar
-RUN chmod 0755 /usr/local/bin/selenium-server-standalone-3.9.0.jar
+## Chrome driver
 RUN wget -N http://chromedriver.storage.googleapis.com/2.40/chromedriver_linux64.zip -P ~/
 RUN unzip ~/chromedriver_linux64.zip -d ~/
 RUN rm ~/chromedriver_linux64.zip
@@ -82,14 +79,7 @@ RUN GK_VERSION=$(if [ ${GECKODRIVER_VERSION:-latest} = "latest" ]; then echo $(w
   && chmod 755 /opt/geckodriver-$GK_VERSION \
   && ln -fs /opt/geckodriver-$GK_VERSION /usr/local/bin/geckodriver
 
-# Folder to copy the selenum grid .json conf files.
-RUN mkdir /usr/local/bin/grid
-
-COPY ./automation/src/com/automation/resources/grid/StartServers.sh /usr/local/bin/runTests
-#Copy the selenium grid conf files for node and hub
-COPY ./automation/src/com/automation/resources/grid/StartGrid.sh /usr/local/bin/grid/runGrid
-COPY ./automation/src/com/automation/resources/grid/GridHub.json /usr/local/bin/grid/GridHub.json
-COPY ./automation/src/com/automation/resources/grid/GridNode.json /usr/local/bin/grid/GridNode.json
+COPY ./automation/src/com/automation/resources/runTests.sh /usr/local/bin/runTests
 
 COPY ./automation /opt/automation
 WORKDIR /opt/automation

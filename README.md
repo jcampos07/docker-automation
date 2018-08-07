@@ -21,4 +21,11 @@ docker-compose exec docker-automation bash /bin/bash (For Windows)
 [2]: https://docs.docker.com/compose/install/ "Docker Compose"
 
 ## Run Test 
+Execute the following command to run the tests in Chrome
+mvn test -Dbrowser=chrome-headless -Dtag=docker-automation -DsuiteXmlFile=test.xml -Durl=http://google.com
+
+To execute the test in FF
+mvn test -Dbrowser=ff-headless -Dtag=docker-automation -DsuiteXmlFile=test.xml -Durl=http://google.com
+
+
 

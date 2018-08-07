@@ -10,8 +10,6 @@ import org.testng.annotations.*;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
-import java.net.MalformedURLException;
-
 
 public class TestCase extends TestCaseBase {
 
@@ -21,10 +19,10 @@ public class TestCase extends TestCaseBase {
      * @param browserName
      * @param url
      */
-    @Parameters({"browserName", "url", "executionMode", "hubUrl"})
+    @Parameters({"browserName", "url"})
     @BeforeMethod(alwaysRun = true)
-    public void setUp(String browserName, String url, String executionMode, String hubUrl) throws MalformedURLException {
-        super.setUp(browserName, executionMode, hubUrl);
+    public void setUp(String browserName, String url) {
+        super.setUp(browserName);
         driver.get(url);
     }
 

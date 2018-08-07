@@ -9,12 +9,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.awt.*;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.concurrent.TimeUnit;
 /**
  * This Class set up the browser in order to execute the tests.
@@ -46,12 +42,8 @@ public class TestCaseBase {
      * this method configure the browser for the tests
      * @param browserName the browser in which the test will run
      */
-    public void setUp(String browserName, String executionMode, String hubUrl) throws MalformedURLException {
-        if (executionMode.equalsIgnoreCase("local")) {
-            setLocalEnvironment(browserName);
-        } else {
-            setGridEnvironment(browserName, hubUrl);
-        }
+    public void setUp(String browserName) {
+        setLocalEnvironment(browserName);
     }
 
     /**
@@ -91,47 +83,6 @@ public class TestCaseBase {
             driver = new InternetExplorerDriver();
             this.browserName = Consts.IE_BROWSER_NAME;
         } 
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
-    }
-
-    /**
-     * Sets a selenium grid to run in parallel the tests.
-     * @param browserName String with the browser to use
-     * @param hubUrl String with the hub url to connect the nodes
-     * @throws MalformedURLException Exception when a url is not formatted properly
-     */
-    public void setGridEnvironment(String browserName, String hubUrl) throws MalformedURLException{
-        if (browserName.equalsIgnoreCase(Consts.CHROME_BROWSER) || browserName.equalsIgnoreCase(Consts.CHROME_HEADLESS_BROWSER)) {
-            ChromeOptions options = new ChromeOptions();
-            if (browserName.equalsIgnoreCase(Consts.CHROME_HEADLESS_BROWSER)) {
-                options.addArguments("headless");
-                options.addArguments("window-size=1920,1080");
-                this.browserName = Consts.CHROME_HEADLESS_BROWSER;
-                options.addArguments("no-sandbox");
-            } else {
-                this.browserName = Consts.CHROME_BROWSER;
-            }
-            driver = new RemoteWebDriver(new URL(hubUrl), options);
-            if (!browserName.equalsIgnoreCase(Consts.CHROME_HEADLESS_BROWSER)) {
-                maximizeChromeScreen(driver);
-            }
-        } else if (browserName.equalsIgnoreCase(Consts.FIREFOX_BROWSER) || browserName.equalsIgnoreCase(Consts.FIREFOX_HEADLESS_BROWSER)) {
-            FirefoxOptions options = new FirefoxOptions();
-            if (browserName.equalsIgnoreCase(Consts.FIREFOX_HEADLESS_BROWSER)) {
-                options.addArguments("-headless");
-            }
-            driver = new RemoteWebDriver(new URL(hubUrl), options);
-            this.browserName = Consts.FIREFOX_BROWSER;
-        } else {
-            DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
-            capabilities.setCapability("ignoreZoomSetting", true);
-            capabilities.setCapability("nativeEvents",false);
-            capabilities.setCapability("ignoreProtectedModeSettings", true);
-            capabilities.setCapability("disable-popup-blocking", true);
-            driver = new RemoteWebDriver(new URL(hubUrl), capabilities);
-            this.browserName = Consts.IE_BROWSER_NAME;
-        }
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
     }

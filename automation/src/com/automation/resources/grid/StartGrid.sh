@@ -1,3 +1,0 @@
-#!/bin/bash
-java -jar /usr/local/bin/selenium-server-standalone-3.9.0.jar -role hub -hubConfig /usr/local/bin/grid/GridHub.json & java -Dwebdriver.gecko.driver=/usr/bin/geckodriver -Dselenium.LOGGER.level=WARNING -jar /usr/local/bin/selenium-server-standalone-3.9.0.jar -port 5556 -role node -nodeConfig /usr/local/bin/grid/GridNode.json & java -Dwebdriver.gecko.driver=/usr/bin/geckodriver -Dselenium.LOGGER.level=WARNING -jar /usr/local/bin/selenium-server-standalone-3.9.0.jar -port 5557 -role node -nodeConfig /usr/local/bin/grid/GridNode.json
-/bin/bash

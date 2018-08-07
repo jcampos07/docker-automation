@@ -15,16 +15,16 @@ import org.testng.annotations.Test;
 
 public class SearchTest extends TestCase {
 
-    @Parameters({"information"})
-    @Test(groups = {"docker"}, description = "Search in google for docker")
+    @Parameters({"secondCriteria"})
+    @Test(groups = {"docker-automation"}, description = "Search in google for docker")
     public void searchDocker(String information) {
         SearchPage searchPage = new SearchPage(getDriverInstance());
         Assert.assertEquals(searchPage.search(information),"https://www.docker.com/", "Docker link was not " +
                 "displayed in the list of results");
     }
 
-    @Parameters({"information"})
-    @Test(groups = {"selenium"}, description = "Search in google for selenium")
+    @Parameters({"firstCriteria"})
+    @Test(groups = {"docker-automation"}, description = "Search in google for selenium")
     public void searchSelenium(String information) {
         SearchPage searchPage = new SearchPage(getDriverInstance());
         Assert.assertEquals(searchPage.search(information), "https://www.seleniumhq.org/", "Selenium link was" +
@@ -32,7 +32,7 @@ public class SearchTest extends TestCase {
     }
 
     @Parameters({"testNG"})
-    @Test(groups = {"selenium"}, description = "Search in google for testNG")
+    @Test(groups = {"docker-automation"}, description = "Search in google for testNG")
     public void searchTestNg(String information) {
         SearchPage searchPage = new SearchPage(getDriverInstance());
         Assert.assertEquals(searchPage.search(information), "https://test.org/", "TestNG link was" +
