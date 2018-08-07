@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Smoke test" parallel="tests" thread-count="3">
+
+    <test name="automation 1">
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="url" value="https://www.google.com/"/>
+        <parameter name="executionMode" value="local"/>
+        <!--<parameter name="browserName" value="${browser}"/> &lt;!&ndash;ff/chrome/chrome-headless/ff-headless/ie&ndash;&gt;-->
+        <!--<parameter name="url" value="${url}"/>-->
+        <!--<parameter name="executionMode" value="${executionMode}"/> &lt;!&ndash; grid or local &ndash;&gt;-->
+        <parameter name="hubUrl" value="http://localhost:4444/wd/hub"/>
+        <parameter name="information" value="selenium"/>
+
+        <groups>
+            <run>
+                <include name="selenium"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.automation.tests.search.SearchTest"/>
+        </classes>
+    </test>
+    <!--Set test parameters to execute test in Firefox browser on windows plateform.-->
+    <test name="automation 2">
+        <parameter name="browserName" value="ff"/>
+        <parameter name="url" value="https://www.google.com/"/>
+        <parameter name="executionMode" value="local"/>
+        <!--<parameter name="browserName" value="${browser}"/> &lt;!&ndash;ff/chrome/chrome-headless/ff-headless/ie&ndash;&gt;-->
+        <!--<parameter name="url" value="${url}"/>-->
+        <!--<parameter name="executionMode" value="${executionMode}"/> &lt;!&ndash; grid or local &ndash;&gt;-->
+        <parameter name="hubUrl" value="http://localhost:4444/wd/hub"/>
+        <parameter name="information" value="docker"/>
+
+        <groups>
+            <run>
+                <include name="docker"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.automation.tests.search.SearchTest"/>
+        </classes>
+    </test>
+</suite>

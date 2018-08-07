@@ -1,0 +1,10 @@
+version: '2'
+services:
+  test-runner:
+    build: .
+    shm_size: '2gb'
+    volumes:
+      - ./automation:/opt/automation
+    env_file:
+      - .env
+    tty: true

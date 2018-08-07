@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="99e8d56e-efa3-455e-b3e9-4e95ba51d997" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/src/com/automation/resources/LeasesFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/src/com/automation/resources/LeasesGAA.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/src/com/automation/resources/LeasesMD.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/src/com/automation/resources/LeasesNY.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/src/com/automation/resources/LeasesTAA.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/src/com/automation/resources/NewUsers.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/src/com/automation/resources/PrintedPDF.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/src/com/automation/resources/manageprinting/ApplicationDocTurnedOff.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/src/com/automation/resources/manageprinting/EmploymentDocTurnedOff.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/src/com/automation/resources/manageprinting/LeaseDocTurnedOff.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/src/com/automation/resources/manageprinting/OtherLeaseDocTurnedOff.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/src/com/automation/resources/manageprinting/RedBookDocTurnedOff.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/src/com/automation/resources/rentalapplication/ContactInformationName.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/src/com/automation/resources/reportName.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/output/test/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/regression.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/reports/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/smoke.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/bot/ActionBot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/DocumentSignature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/LeaseTerm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/ManageESignature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/PrinteSign.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/Settings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/StudentLease.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/Users.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/rentalapplication/AdditionalIncome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/rentalapplication/ApplicantDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/rentalapplication/ApplicantIdentification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/rentalapplication/ApplicationFee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/rentalapplication/CoApplicants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/rentalapplication/ContactInformation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/rentalapplication/CreditHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/rentalapplication/CriminalHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/rentalapplication/CurrentResidence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/rentalapplication/EmergencyContact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/rentalapplication/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/rentalapplication/OtherOccupants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/rentalapplication/Pets.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/rentalapplication/PreviousResidence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/rentalapplication/RentalApplicationSettings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/domain/rentalapplication/Vehicles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/PageObjectBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/applicationform/onlinerentalapplication/OnlineRentalApplicationPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/applicationform/onlinerentalapplication/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/applicationform/printform/PrintFormsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/applicationform/printform/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/common/CommonFunctionsPO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/common/CommonManagePrinting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/common/CommonWebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/common/ComparePdfInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/common/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/documentsignature/DocumentSignaturePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/documentsignature/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/formonline/FormOnlinePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/formonline/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/leaserecords/LeasePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/leaserecords/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/leaserecords/createlease/leaseterms/LeaseTermsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/leaserecords/createlease/leaseterms/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/leaserecords/createlease/studentlease/StudentLeasePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/leaserecords/createlease/studentlease/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/leaserecords/manageesignature/ManageEsignaturePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/leaserecords/manageesignature/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/leaserecords/print/PrintPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/leaserecords/print/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/leaserecords/renewlease/LeaseRenewalTermsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/leaserecords/renewlease/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/leaserecords/sections/SectionsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/leaserecords/sections/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/login/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/menu/MenuOptionsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/menu/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/CommonRentalApplicationFormsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/CommonWebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/applicant/ApplicantDetailsFormsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/applicant/ApplicantIdentificationFormsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/applicant/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/applicationfee/ApplicationFeePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/applicationfee/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/coapplicants/CoApplicantsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/coapplicants/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/contactinformation/ContactInformationFormsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/contactinformation/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/emergencycontact/EmergencyContactPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/emergencycontact/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/employment/CurrentEmployerPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/employment/PreviousEmployerPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/employment/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/history/CreditHistoryPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/history/CriminalHistoryPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/history/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/income/AdditionalIncomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/income/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/introduction/IntroductionRentalApplicationFormsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/introduction/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/occupants/OtherOccupantsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/occupants/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/pets/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/pets/YourPetsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/residence/CurrentResidencePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/residence/PreviousResidencePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/residence/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/vehicles/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/rentalapplication/vehicles/YourVehiclesPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/settings/SettingsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/settings/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/settings/manageprinting/ManagePrintingPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/settings/manageprinting/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/settings/manageusers/ManageUsersPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/settings/manageusers/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/settings/preferences/rentalapplicationsettings/managecontent/RentalApplicationManageContentPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/settings/preferences/rentalapplicationsettings/managecontent/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/settings/preferences/rentalapplicationsettings/settings/RentalApplicationSettingsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/pageobjects/settings/preferences/rentalapplicationsettings/settings/WebElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/Credentials.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/DocumentSignature.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/LeaseTermForm.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/ManageESignature.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/ManageUsers.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/MenuOptions.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/Menus.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/PrinteSign.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/SettingsConfigurations.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/StudentLeaseForm.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/dataproviders/LeasesDataProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/dataproviders/ManagePrintingDataProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/dataproviders/OnlineRentalAppDataProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/dataproviders/UsersDataProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/form.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/grid/GridHub.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/grid/GridNode.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/grid/StartGrid.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/grid/StartServers.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/grid/StartServers.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/manageprinting/ApplicationFormsList.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/manageprinting/EmploymentFormsList.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/manageprinting/LeaseFormsList.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/manageprinting/OtherLeaseFormsList.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/manageprinting/RedbookFormsList.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/recipients.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/recipientsSmoke.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/AdditionalIncome.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/ApplicantDetails.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/ApplicantIdentification.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/ApplicationFee.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/CoApplicants.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/ContactInformation.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/CreditHistory.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/CriminalHistory.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/CriminalHistorycsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/CurrentEmployer.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/CurrentResidence.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/CustomTermsConditions.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/EmergencyContact.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/OtherOccupants.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/Pets.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/PreviousEmployer.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/PreviousResidence.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/RentalApplicationSections.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/RentalApplicationSettings.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/resources/rentalapplication/Vehicles.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/applicationforms/onlinerentalapplications/OnlineRentalApplicationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/common/LoginTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/common/PrintPDFFileTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/config/ExtentManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/config/ExtentTestManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/config/TestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/config/TestCaseBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/leaserecords/lease/CreateLeaseTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/leaserecords/lease/DeleteLeaseTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/leaserecords/lease/EditLeaseTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/leaserecords/lease/LeaseOptionsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/leaserecords/lease/RenewLeaseTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/leaserecords/manageesignatures/ManageESignatureTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/leaserecords/printesign/PrinteSignTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/leaserecords/search/SearchLeaseTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/login/LoginTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/onlinerentalapplication/OnlineRentalApplicationURLTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/residentsigndocument/PreRequirements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/residentsigndocument/SignDocumentTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/settings/manageprinting/ManagePrintingTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/settings/manageusers/CreateUsersTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/settings/manageusers/DeleteUserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/settings/manageusers/EditUserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/settings/manageusers/UserRestrictionsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/settings/manageusers/ValidationsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/tests/settings/preferences/RentalApplicationSettingsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/utils/CommonFunctions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/utils/Consts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/utils/Data.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/utils/FileUtilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/utils/maildev/Maildev.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/utils/maildev/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/utils/mailtrap/Inbox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/utils/mailtrap/Mailtrap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluemoon-automation/src/com/bluemoon/utils/mailtrap/Message.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="ActionBot.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/automation/src/com/automation/bot/ActionBot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/automation/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="371" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="meetup-automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetup-automation" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="99e8d56e-efa3-455e-b3e9-4e95ba51d997" name="Default" comment="" />
+      <created>1533579422726</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533579422726</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/automation/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/src/com/automation/bot/ActionBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
