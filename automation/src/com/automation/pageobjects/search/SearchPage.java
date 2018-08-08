@@ -19,6 +19,7 @@ public class SearchPage extends PageObjectBase {
     }
 
     public String search(String criteria) {
+        System.out.println("I am serching: " + criteria);
         actionBot.waitForElementVisible(WebElements.GOOGLE_ICON);
         typeCriteria(criteria);
         clickOnGoogleSearchButton();

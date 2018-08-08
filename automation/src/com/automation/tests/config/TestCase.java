@@ -35,6 +35,7 @@ public class TestCase extends TestCaseBase {
     @AfterMethod(alwaysRun = true)
     public void quitBrowser(ITestResult testResult, Method method) {
         if (!testResult.isSuccess()) {
+            System.out.println("Test failed: " + method.getName());
             try {
                 File file = new File("screenshots");
                 if (!file.exists()) {
@@ -49,6 +50,8 @@ public class TestCase extends TestCaseBase {
             }catch (IOException ex) {
                 throw new RuntimeException("Error taking the screenshot");
             }
+        } else {
+            System.out.println("Test succeed: " + method.getName());
         }
         super.quitBrowser();
     }
