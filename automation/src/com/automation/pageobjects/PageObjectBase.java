@@ -16,17 +16,6 @@ public class PageObjectBase {
      */
     protected ActionBot actionBot;
     protected WebDriver driver;
-    protected static String browserName;
-
-    /**
-     * Constructor
-     * @param webDriver webDriver instance
-     */
-    public PageObjectBase(WebDriver webDriver, String browser) {
-        this.browserName = browser;
-        actionBot = new ActionBot(webDriver,browser);
-        this.driver = webDriver;
-    }
 
     /**
      * Constructor
@@ -36,18 +25,4 @@ public class PageObjectBase {
         actionBot = new ActionBot(webDriver);
         this.driver = webDriver;
     }
-
-    /**
-     * This method gets the actual instance of webDriver
-     * @return webdriver instance the getDriver method inherited from TestCaseBase class
-     */
-    public WebDriver getDriverInstance() {
-        return this.driver;
-    }
-
-    public String getBrowserName() {
-        return this.browserName;
-    }
-
-
 }

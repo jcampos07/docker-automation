@@ -8,7 +8,5 @@ debug.log
 src/com/bluemoon/resources/reportName.txt
 
 # exclude everything
-reports/*
+reports
 
-# exception to the rule
-!reports/readme.txt

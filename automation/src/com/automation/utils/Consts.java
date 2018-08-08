@@ -1,7 +1,7 @@
 package com.automation.utils;
 
 /**
- * This class contains all the constants variables that are used in the bluemoon site.
+ * This class contains all the constants variables that are used in product.
  * @author Jason Campos on 09/07/17.
  */
 

@@ -8,8 +8,7 @@ import org.testng.annotations.Test;
 
 
 /**
- * This class is a test to verify the search functionality, it is a search test since most of the scenarios need to be
- * logged
+ * This class is a test to verify a search on google page
  *  @author Jason-Campos on 8/06/2018
  */
 

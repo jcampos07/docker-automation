@@ -2,14 +2,10 @@ package com.automation.bot;
 
 import com.automation.tests.config.TestCaseBase;
 import com.google.common.base.Function;
-import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.*;
 
 /**
@@ -28,16 +24,6 @@ public class ActionBot extends TestCaseBase {
     private WebDriverWait webDriverWait;
     private final int TIME_TO_WAIT_IN_SECONDS = 60;
     private final int DEFAULT_TIME_TO_WAIT_IN_SECONDS = 45;
-
-    /**
-     * constructor
-     * @param driver instance of the web driver
-     * @param browser browser name
-     */
-    public ActionBot(WebDriver driver, String browser){
-        this.driver = driver;
-        this.webDriverWait = new WebDriverWait(this.driver, TIME_TO_WAIT_IN_SECONDS);
-    }
 
     /**
      * constructor
@@ -77,17 +63,6 @@ public class ActionBot extends TestCaseBase {
             return driver.findElement(element);
         }
         throw new RuntimeException(String.format("The web element with the following locator was not found: %s", element));
-    }
-
-    /**
-     * this method find an element in the html
-     * @param element web element to type the info
-     */
-    public List<WebElement> findAll(By element) {
-        if(waitForElementPresent(element,TIME_TO_WAIT_IN_SECONDS)) {
-            return driver.findElements(element);
-        }
-        throw new RuntimeException(String.format("The web elements with the following locator were not found: %s" ,element));
     }
 
     /**
@@ -149,23 +124,6 @@ public class ActionBot extends TestCaseBase {
     }
 
     /**
-     * This method wait that the element is not visible in order to perform the following action
-     * @param element element to wait
-     *  @return boolean
-     */
-    public boolean waitForElementInVisible(final By element) {
-        boolean isElementPresent = true;
-        try {
-            WebDriverWait wait = new WebDriverWait(driver, DEFAULT_TIME_TO_WAIT_IN_SECONDS);
-            wait.until(ExpectedConditions.invisibilityOfElementLocated(element));
-        } catch (TimeoutException te) {
-            System.out.println("I enter in invisible timeout");
-            isElementPresent = false;
-        }
-        return isElementPresent;
-    }
-
-    /**
      * This method waits for X amount of milliseconds for continuing the next instruction
      * @param timeToWaitInMilliseconds overall of milliseconds to wait.
      */
@@ -174,15 +132,6 @@ public class ActionBot extends TestCaseBase {
         while((System.currentTimeMillis()-startTime)<timeToWaitInMilliseconds)
         {
         }
-    }
-
-    /**
-     * This method calls the text from the element
-     * @param element to get the text
-     * @return String info of the text field
-     */
-    public String getText(WebElement element) {
-        return element.getText().trim();
     }
 
     /**
@@ -197,14 +146,6 @@ public class ActionBot extends TestCaseBase {
             throw new RuntimeException(String.format("The element is not visible in the expected time before clicking " +
                     "it: %s", element));
         }
-    }
-
-    /** @param element to get the text
-     *  @param attribute, is the attribute to find out in the html
-     * @return String info of the text field
-     */
-    public String getAttribute(By element, String attribute){
-        return  find(element).getAttribute(attribute);
     }
 
     /**
