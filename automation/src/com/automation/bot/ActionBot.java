@@ -22,8 +22,8 @@ public class ActionBot extends TestCaseBase {
      */
     private WebDriver driver;
     private WebDriverWait webDriverWait;
-    private final int TIME_TO_WAIT_IN_SECONDS = 60;
-    private final int DEFAULT_TIME_TO_WAIT_IN_SECONDS = 45;
+    private final int TIME_TO_WAIT_IN_SECONDS = 30;
+    private final int DEFAULT_TIME_TO_WAIT_IN_SECONDS = 30;
 
     /**
      * constructor
