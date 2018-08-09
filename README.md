@@ -14,7 +14,7 @@ docker-compose build
 docker-compose up -d
 # Login in the container
 docker-compose exec docker-automation /bin/bash (MAC)
-docker-compose exec docker-automation bash /bin/bash (For Windows)
+docker-compose exec docker-automation bash (For Windows)
 ```
 
 [0]: https://www.docker.com/products/overview "Docker"
